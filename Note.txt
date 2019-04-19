@@ -53,6 +53,7 @@ C:\Users\Annie\AppData\Roaming\npm\node_modules\my-first-library -> D:\react\ang
 D:\react\angular-libraries\m4\demo3-typescript-package\first-consumer\node_modules\my-first-library -> C:\Users\Annie\AppData\Roaming\npm\node_modules\my-first-library -> D:\react\angular-libra
 ries\m4\demo3-typescript-package\first-ts-package
 
+-------------------
 
 D:\react\angular-libraries\m4\demo3-typescript-package\first-consumer>npm start
 
@@ -60,4 +61,42 @@ D:\react\angular-libraries\m4\demo3-typescript-package\first-consumer>npm start
 > tsc && cd dist && node main.js
 
 12
+
+#################################
+
+https://docs.google.com/document/d/1CZC2rcpxffTDfRDs6p1cfbmKNLA6x5O-NtkJglDaBVs/preview
+
+Steps to Produce an Angular Library
+- Inlining all the templates	<< This is required by the ng-packagr, @angular-devkit/build-ng-packagr
+
+What will be created in ngc?
+Module definitions	bundles / esm5 / esm2015 / fesm5 / fesm2015	<< all folders
+Typings			my-first.d.ts, public_api.d.ts
+Ahead-of-time metadata	my-first.metadata.json
+Entrypoint		public_api.d.ts
+
+
+D:\react\angular-libraries\m5>npm install ng-packagr -g
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
