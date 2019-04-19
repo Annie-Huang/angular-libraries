@@ -196,6 +196,8 @@ Built Angular Package!
 
 D:\react\angular-libraries\ng-packagr-demo1>npm install super-lib/dist
 
+D:\react\angular-libraries\ng-packagr-demo1>npm run start
+
 
 
 
