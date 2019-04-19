@@ -17,8 +17,11 @@ hello world
 Inside tsconfig.json, if you change module to:
 "module": "commonjs"
 "module": "amd"		<< node doesn't not amd
-"module": "es5"
-"module": "es6"
+
+Or change target to:
+"target": "es5"
+"target": "es6"
+
 And the run tsc to transpile it. You can see change in the dist/main.js and dist/print-module.js file.
 
 {
@@ -29,4 +32,26 @@ And the run tsc to transpile it. You can see change in the dist/main.js and dist
     },
     "include": ["./"]
 }
+
+-------------------
+
+D:\react\angular-libraries\m4\demo3-typescript-package\first-ts-package>npm run build
+
+> my-first-library@0.0.1 build D:\react\angular-libraries\m4\demo3-typescript-package\first-ts-package
+> tsc
+
+
+D:\react\angular-libraries\m4\demo3-typescript-package\first-consumer>npm link ..\first-ts-package
+npm WARN my-first-library@0.0.1 No description
+npm WARN my-first-library@0.0.1 No repository field.
+npm WARN my-first-library@0.0.1 No license field.
+
+up to date in 0.965s
+found 0 vulnerabilities
+
+C:\Users\Annie\AppData\Roaming\npm\node_modules\my-first-library -> D:\react\angular-libraries\m4\demo3-typescript-package\first-ts-package
+D:\react\angular-libraries\m4\demo3-typescript-package\first-consumer\node_modules\my-first-library -> C:\Users\Annie\AppData\Roaming\npm\node_modules\my-first-library -> D:\react\angular-libra
+ries\m4\demo3-typescript-package\first-ts-package
+
+
 
