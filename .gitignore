@@ -6,3 +6,5 @@
 /m5/**/frontend/node_modules/
 /m5/**/end/frontend/dist/
 /m4/demo3-typescript-package/first-consumer/node_modules/
+
+.idea

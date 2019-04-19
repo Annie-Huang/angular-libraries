@@ -1,0 +1,32 @@
+D:\react\angular-libraries\m4\demo1-first-javascript-module\commonjs>node main.js
+
+------------
+
+D:\react\angular-libraries\m4\demo2-first-typescript-module\typescript>tsc -v
+Version 2.4.2
+
+D:\react\angular-libraries\m4\demo2-first-typescript-module\typescript>tsc      << to create the dist directory
+
+D:\react\angular-libraries\m4\demo2-first-typescript-module\typescript>cd dist
+
+D:\react\angular-libraries\m4\demo2-first-typescript-module\typescript\dist>node main.js
+hello world
+
+--------------
+
+Inside tsconfig.json, if you change module to:
+"module": "commonjs"
+"module": "amd"		<< node doesn't not amd
+"module": "es5"
+"module": "es6"
+And the run tsc to transpile it. You can see change in the dist/main.js and dist/print-module.js file.
+
+{
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "module": "commonjs", // let is be xx modules
+        "target": "es5" // created modules should be  in the xx syntax
+    },
+    "include": ["./"]
+}
+
