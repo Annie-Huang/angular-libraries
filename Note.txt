@@ -1,3 +1,11 @@
+m4: in m4 folder
+m5: in root folder
+
+
+#################################
+## M4 
+#################################
+
 D:\react\angular-libraries\m4\demo1-first-javascript-module\commonjs>node main.js
 
 ------------
@@ -63,6 +71,8 @@ D:\react\angular-libraries\m4\demo3-typescript-package\first-consumer>npm start
 12
 
 #################################
+## M5 
+#################################
 
 https://docs.google.com/document/d/1CZC2rcpxffTDfRDs6p1cfbmKNLA6x5O-NtkJglDaBVs/preview
 
@@ -79,17 +89,71 @@ Entrypoint		public_api.d.ts
 D:\react\angular-libraries\m5>npm install ng-packagr -g
 
 
+D:\Temp\ea-component-library\projects\ea-ui\package.json
+{
+  "name": "@ea/ea-ui",
+  "version": "1.3.0",
+  "peerDependencies": {
+    "@angular/common": "^7.1.0",
+    "@angular/core": "^7.1.0",
+    "dayjs": "^1.8.10"
+  },
+  "dependencies": {
+    "ngx-take-until-destroy": "^5.4.0",
+    "ngx-mask": "^7.7.0"
+  },
+  "ngPackage": {
+    "dest": "../../dist/ea-ui",
+    "whitelistedNonPeerDependencies": [
+      "ngx-take-until-destroy",
+      "ngx-mask"
+    ],
+    "lib": {
+      "styleIncludePaths": [
+        "./src/assets/scss"
+      ]
+    }
+  }
+}
+
+D:\Temp\ea-component-library\projects\ea-ui\ng-package.json
+{
+  "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
+  "dest": "../../dist/ea-ui",
+  "lib": {
+    "entryFile": "src/public_api.ts"
+  }
+}
+
+---------
+
+D:\react\angular-libraries>ng new ng-packagr-demo
+? Would you like to add Angular routing? No
+? Which stylesheet format would you like to use? CSS
 
 
 
+    "ng-packagr": "^4.2.0",
+    "tsickle": ">=0.29.0",
+are the libraries that ng-packagr depends on.
+
+
+--------
+
+
+D:\Temp\ea-component-library>npm run build-lib
+
+> ea-component-library@1.0.0 build-lib D:\Temp\ea-component-library
+> ng build ea-ui
+
+Building Angular Package
+Building entry point '@ea/ea-ui'
+Compiling TypeScript sources through ngc
+Bundling to FESM2015
 
 
 
-
-
-
-
-
+ng build ea-ui is calling: "ng-opackagr -p ea-ui/package.json" underneath....
 
 
 
