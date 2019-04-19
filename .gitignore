@@ -8,3 +8,4 @@
 /m4/demo3-typescript-package/first-consumer/node_modules/
 
 .idea
+**/frontend/node_modules/
