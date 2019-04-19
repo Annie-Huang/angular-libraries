@@ -54,4 +54,10 @@ D:\react\angular-libraries\m4\demo3-typescript-package\first-consumer\node_modul
 ries\m4\demo3-typescript-package\first-ts-package
 
 
+D:\react\angular-libraries\m4\demo3-typescript-package\first-consumer>npm start
+
+> first-consumer@1.0.0 start D:\react\angular-libraries\m4\demo3-typescript-package\first-consumer
+> tsc && cd dist && node main.js
+
+12
 
