@@ -1,12 +1,13 @@
 import { __decorate } from 'tslib';
 import { Component, NgModule } from '@angular/core';
 
+// template: '<p>Hello from the library</p>'
 let SuperLibComponent = class SuperLibComponent {
 };
 SuperLibComponent = __decorate([
     Component({
         selector: 'super-lib-component',
-        template: '<p>Hello from the library</p>'
+        template: "<p>\r\n  Hello from an external template\r\n</p>\r\n"
     })
 ], SuperLibComponent);
 

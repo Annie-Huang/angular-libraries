@@ -26,13 +26,14 @@
         return c > 3 && r && Object.defineProperty(target, key, r), r;
     }
 
+    // template: '<p>Hello from the library</p>'
     var SuperLibComponent = /** @class */ (function () {
         function SuperLibComponent() {
         }
         SuperLibComponent = __decorate([
             core.Component({
                 selector: 'super-lib-component',
-                template: '<p>Hello from the library</p>'
+                template: "<p>\r\n  Hello from an external template\r\n</p>\r\n"
             })
         ], SuperLibComponent);
         return SuperLibComponent;
